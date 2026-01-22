@@ -1,43 +1,42 @@
-
 import { Link } from "react-router-dom";
 import Rating from "../sidebar/rating";
 
 
-const subTitle = "World-class Instructors";
-const title = "Classes Taught By Real Creators";
+const subTitle = "Organizadores Destacados";
+const title = "Conoce a Nuestros Mejores Organizadores";
 
 const instructorList = [
     {
         imgUrl: 'assets/images/instructor/01.jpg',
-        imgAlt: 'instructor rajibraj91 rajibraj',
-        name: 'Emilee Logan',
-        degi: 'Master of Education Degree',
-        courseCount: '08 courses',
-        studentAnroll: '30 students',
+        imgAlt: 'organizador de eventos',
+        name: 'María Fernández',
+        degi: 'Especialista en Eventos Corporativos',
+        courseCount: '45 eventos',
+        studentAnroll: '12K asistentes',
     },
     {
         imgUrl: 'assets/images/instructor/02.jpg',
-        imgAlt: 'instructor rajibraj91 rajibraj',
-        name: 'Donald Logan',
-        degi: 'Master of Education Degree',
-        courseCount: '08 courses',
-        studentAnroll: '30 students',
+        imgAlt: 'organizador de eventos',
+        name: 'Carlos Mendoza',
+        degi: 'Productor de Conciertos',
+        courseCount: '32 eventos',
+        studentAnroll: '25K asistentes',
     },
     {
         imgUrl: 'assets/images/instructor/03.jpg',
-        imgAlt: 'instructor rajibraj91 rajibraj',
-        name: 'Oliver Porter',
-        degi: 'Master of Education Degree',
-        courseCount: '08 courses',
-        studentAnroll: '30 students',
+        imgAlt: 'organizador de eventos',
+        name: 'Ana Gutiérrez',
+        degi: 'Coordinadora de Festivales',
+        courseCount: '28 eventos',
+        studentAnroll: '18K asistentes',
     },
     {
         imgUrl: 'assets/images/instructor/04.jpg',
-        imgAlt: 'instructor rajibraj91 rajibraj',
-        name: 'Nahla Jones',
-        degi: 'Master of Education Degree',
-        courseCount: '08 courses',
-        studentAnroll: '30 students',
+        imgAlt: 'organizador de eventos',
+        name: 'Luis Torres',
+        degi: 'Director de Conferencias',
+        courseCount: '52 eventos',
+        studentAnroll: '8K asistentes',
     },
 ]
 
@@ -67,7 +66,7 @@ const Instructor = () => {
                                     </div>
                                     <div className="instructor-footer">
                                         <ul className="lab-ul d-flex flex-wrap justify-content-between align-items-center">
-                                            <li><i className="icofont-book-alt"></i> {val.courseCount}</li>
+                                            <li><i className="icofont-calendar"></i> {val.courseCount}</li>
                                             <li><i className="icofont-users-alt-3"></i> {val.studentAnroll}</li>
                                         </ul>
                                     </div>
@@ -76,7 +75,7 @@ const Instructor = () => {
                         ))}
                     </div>
                     <div className="text-center footer-btn">
-                        <p>Want to help people learn, grow and achieve more in life?<Link to="/team">Become an instructor</Link></p>
+                        <p>¿Quieres organizar eventos increíbles? <Link to="/team">Conviértete en organizador</Link></p>
                     </div>
                 </div>
             </div>

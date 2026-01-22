@@ -9,163 +9,163 @@ import Pagination from "../component/sidebar/pagination";
 const blogList = [
     {
         imgUrl: 'assets/images/blog/01.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'Business Ueporting Rouncil Them Could Plan.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Nuevo Festival de Música Electrónica en Lima',
+        desc: 'Se anuncia un nuevo festival de música electrónica para el próximo mes. Conoce los detalles sobre las fechas y artistas confirmados.',
+        commentCount: '12',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '15 Ene, 2026',
             },
         ],
     },
     {
         imgUrl: 'assets/images/blog/02.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'Financial Reporting Qouncil What Could More.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Conferencia de Tecnología Confirmada para Marzo',
+        desc: 'La esperada conferencia de tecnología e innovación ya tiene fecha. Empresas locales e internacionales participarán del evento.',
+        commentCount: '8',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '12 Ene, 2026',
             },
         ],
     },
     {
         imgUrl: 'assets/images/blog/03.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'Consulting Reporting Qounc Arei Could More.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Feria Gastronómica Internacional en el Parque Central',
+        desc: 'Llega una nueva edición de la feria gastronómica con comida de diferentes países. Entrada libre para toda la familia.',
+        commentCount: '15',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '10 Ene, 2026',
             },
         ],
     },
     {
         imgUrl: 'assets/images/blog/04.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'Strategic Social Media and of visual design.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Maratón Anual: Inscripciones Abiertas',
+        desc: 'Ya están abiertas las inscripciones para la maratón anual de la ciudad. Categorías de 5K, 10K y 21K disponibles.',
+        commentCount: '6',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '08 Ene, 2026',
             },
         ],
     },
     {
         imgUrl: 'assets/images/blog/05.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'Find the Right Path for your Group Course online.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Taller de Fotografía para Principiantes',
+        desc: 'Se realizará un taller intensivo de fotografía este fin de semana. Cupos limitados, inscripciones en la página del evento.',
+        commentCount: '4',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '05 Ene, 2026',
             },
         ],
     },
     {
         imgUrl: 'assets/images/blog/06.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'Learn by doing with Real World Projects other countries.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Concierto de Rock Nacional en el Estadio',
+        desc: 'Bandas nacionales se presentarán en un concierto especial. Las entradas ya están disponibles en puntos de venta autorizados.',
+        commentCount: '20',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '03 Ene, 2026',
             },
         ],
     },
     {
         imgUrl: 'assets/images/blog/07.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'The Importance Of Intrinsic for Students.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Obra de Teatro Infantil en el Centro Cultural',
+        desc: 'Una nueva obra de teatro para niños se presentará durante todo el mes. Perfecta para disfrutar en familia.',
+        commentCount: '7',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '01 Ene, 2026',
             },
         ],
     },
     {
         imgUrl: 'assets/images/blog/08.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'A Better Alternative To Grading Student Writing.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Exposición de Arte Contemporáneo',
+        desc: 'Artistas locales expondrán sus obras en la galería municipal. La entrada es gratuita durante toda la semana.',
+        commentCount: '5',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '28 Dic, 2025',
             },
         ],
     },
     {
         imgUrl: 'assets/images/blog/09.jpg',
-        imgAlt: 'Blog Thumb',
-        title: 'The Challenge Global Learning In Public Education.',
-        desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
-        commentCount: '3',
-        btnText: 'Read More',
+        imgAlt: 'Noticia de evento',
+        title: 'Festival de Cine Independiente',
+        desc: 'Se proyectarán películas de cineastas independientes durante tres días. Un evento imperdible para los amantes del cine.',
+        commentCount: '9',
+        btnText: 'Leer Más',
         metaList: [
             {
                 iconName: 'icofont-ui-user',
-                text: 'Rajib Raj',
+                text: 'Redacción',
             },
             {
                 iconName: 'icofont-calendar',
-                text: 'Jun 05,2022',
+                text: '25 Dic, 2025',
             },
         ],
     },
@@ -177,7 +177,7 @@ const BlogPage = () => {
     return ( 
         <Fragment>
             <Header />
-            <PageHeader title={'Our Blog Posts'} curPage={'Blog'} />
+            <PageHeader title={'Noticias y Novedades'} curPage={'Noticias'} />
             <div className="blog-section padding-tb section-bg">
                 <div className="container">
                     <div className="section-wrapper">

@@ -1,55 +1,53 @@
-
 import { Link } from "react-router-dom";
 
-const newsTitle = "Want Us To Email You About Special Offers And Updates?";
-const siteTitle = "Site Map";
-const useTitle = "Useful Links";
-const socialTitle = "Social Contact";
-const supportTitle = "Our Support";
+const siteTitle = "Mapa del Sitio";
+const useTitle = "Enlaces Útiles";
+const socialTitle = "Redes Sociales";
+const supportTitle = "Soporte";
 
 
 const siteList = [
     {
-        text: 'Documentation',
-        link: '#',
+        text: 'Inicio',
+        link: '/',
     },
     {
-        text: 'Feedback',
-        link: '#',
+        text: 'Todos los Eventos',
+        link: '/course',
     },
     {
-        text: 'Plugins',
-        link: '#',
+        text: 'Noticias',
+        link: '/blog',
     },
     {
-        text: 'Support Forums',
-        link: '#',
+        text: 'Organizadores',
+        link: '/team',
     },
     {
-        text: 'Themes',
-        link: '#',
+        text: 'Contacto',
+        link: '/contact',
     },
 ]
 
 const useList = [
     {
-        text: 'About Us',
+        text: 'Acerca de Nosotros',
+        link: '/about',
+    },
+    {
+        text: 'Preguntas Frecuentes',
         link: '#',
     },
     {
-        text: 'Help Link',
+        text: 'Términos y Condiciones',
         link: '#',
     },
     {
-        text: 'Terms & Conditions',
-        link: '#',
+        text: 'Contáctanos',
+        link: '/contact',
     },
     {
-        text: 'Contact Us',
-        link: '#',
-    },
-    {
-        text: 'Privacy Policy',
+        text: 'Política de Privacidad',
         link: '#',
     },
 ]
@@ -58,45 +56,50 @@ const socialList = [
     {
         text: 'Facebook',
         link: '#',
+        icon: 'icofont-facebook',
     },
     {
         text: 'Twitter',
         link: '#',
+        icon: 'icofont-twitter',
     },
     {
         text: 'Instagram',
         link: '#',
+        icon: 'icofont-instagram',
+    },
+    {
+        text: 'LinkedIn',
+        link: '#',
+        icon: 'icofont-linkedin',
     },
     {
         text: 'YouTube',
         link: '#',
-    },
-    {
-        text: 'Github',
-        link: '#',
+        icon: 'icofont-youtube',
     },
 ]
 
 const supportList = [
     {
-        text: 'Help Center',
+        text: 'Centro de Ayuda',
         link: '#',
     },
     {
-        text: 'Paid with Mollie',
+        text: 'Cómo Registrarse',
+        link: '/signup',
+    },
+    {
+        text: 'Guía de Eventos',
         link: '#',
     },
     {
-        text: 'Status',
+        text: 'Reportar un Problema',
         link: '#',
     },
     {
-        text: 'Changelog',
-        link: '#',
-    },
-    {
-        text: 'Contact Support',
-        link: '#',
+        text: 'Contactar Soporte',
+        link: '/contact',
     },
 ]
 
@@ -110,26 +113,8 @@ const Footer = () => {
                 <img src="assets/images/shape-img/04.png" alt="fst" className="fst-2" />
             </div>
             
-            <div className="news-letter">
-                <div className="container">
-                    <div className="section-wrapper">
-                        <div className="news-title">
-                            <h3>{newsTitle}</h3>
-                        </div>
-                        <div className="news-form">
-                            <form action="/">
-                                <div className="nf-list">
-                                    <input type="email" name="email" placeholder="Enter Your Email" />
-                                    <input type="submit" name="submit" value="Subscribe Now" />
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
             <footer>
-                <div className="footer-top padding-tb pt-0">
+                <div className="footer-top padding-tb">
                     <div className="container">
                         <div className="row g-4 row-cols-xl-4 row-cols-md-2 row-cols-1 justify-content-center">
                             <div className="col">
@@ -142,7 +127,7 @@ const Footer = () => {
                                             <div className="content">
                                                 <ul className="lab-ul">
                                                     {siteList.map((val, i) => (
-                                                        <li key={i}><a href={val.link}>{val.text}</a></li>
+                                                        <li key={i}><Link to={val.link}>{val.text}</Link></li>
                                                     ))}
                                                 </ul>
                                             </div>
@@ -160,7 +145,7 @@ const Footer = () => {
                                             <div className="content">
                                                 <ul className="lab-ul">
                                                     {useList.map((val, i) => (
-                                                        <li key={i}><a href={val.link}>{val.text}</a></li>
+                                                        <li key={i}><Link to={val.link}>{val.text}</Link></li>
                                                     ))}
                                                 </ul>
                                             </div>
@@ -178,7 +163,11 @@ const Footer = () => {
                                             <div className="content">
                                                 <ul className="lab-ul">
                                                     {socialList.map((val, i) => (
-                                                        <li key={i}><a href={val.link}>{val.text}</a></li>
+                                                        <li key={i}>
+                                                            <a href={val.link}>
+                                                                <i className={val.icon}></i> {val.text}
+                                                            </a>
+                                                        </li>
                                                     ))}
                                                 </ul>
                                             </div>
@@ -196,7 +185,7 @@ const Footer = () => {
                                             <div className="content">
                                                 <ul className="lab-ul">
                                                     {supportList.map((val, i) => (
-                                                        <li key={i}><a href={val.link}>{val.text}</a></li>
+                                                        <li key={i}><Link to={val.link}>{val.text}</Link></li>
                                                     ))}
                                                 </ul>
                                             </div>
@@ -210,7 +199,7 @@ const Footer = () => {
                 <div className="footer-bottom style-2">
                     <div className="container">
                         <div className="section-wrapper">
-                            <p>&copy; 2022 <Link to="/">Edukon</Link> Designed by <a href="https://themeforest.net/user/CodexCoder" target="_blank">CodexCoder</a> </p>
+                            <p>&copy; 2026 <Link to="/">EventPro</Link> | Todos los derechos reservados | Lima, Perú </p>
                         </div>
                     </div>
                 </div>

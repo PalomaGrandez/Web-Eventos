@@ -1,30 +1,27 @@
-
-
-
-const subTitle = "About Our Edukon";
-const title = "Good Qualification Services And Better Skills";
-const desc = "Distinctively provide acces mutfuncto users whereas transparent proceses somes ncentivize eficient functionalities rather than extensible archtectur communicate leveraged services and cross-platform.";
+const subTitle = "Sobre Nosotros";
+const title = "Creamos Experiencias Memorables Para Ti";
+const desc = "Somos la plataforma líder en organización y promoción de eventos en Perú. Conectamos a miles de personas con experiencias únicas, desde conciertos y festivales hasta conferencias y talleres especializados.";
 
 
 
 const aboutList = [
     {
         imgUrl: 'assets/images/about/icon/01.jpg',
-        imgAlt: 'about icon rajibraj91 rajibraj',
-        title: 'Skilled Instructors',
-        desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
+        imgAlt: 'Organizadores Profesionales',
+        title: 'Organizadores Profesionales',
+        desc: 'Trabajamos con los mejores organizadores del país para garantizar eventos de alta calidad y experiencias inolvidables',
     },
     {
         imgUrl: 'assets/images/about/icon/02.jpg',
-        imgAlt: 'about icon rajibraj91 rajibraj',
-        title: 'Get Certificate',
-        desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
+        imgAlt: 'Variedad de Eventos',
+        title: 'Variedad de Eventos',
+        desc: 'Desde conciertos y festivales hasta conferencias y talleres. Encuentra el evento perfecto para ti',
     },
     {
         imgUrl: 'assets/images/about/icon/03.jpg',
-        imgAlt: 'about icon rajibraj91 rajibraj',
-        title: 'Online Classes',
-        desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services',
+        imgAlt: 'Fácil Acceso',
+        title: 'Acceso Inmediato',
+        desc: 'Registro sencillo y acceso instantáneo a toda la información de eventos. Todo en un solo lugar',
     },
 ]
 

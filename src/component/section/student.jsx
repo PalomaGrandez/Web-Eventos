@@ -1,26 +1,25 @@
-
 import { Link } from "react-router-dom";
 import Rating from "../sidebar/rating";
 
 
-const subTitle = "Loved by 200,000+ students";
-const title = "Students Community Feedback";
+const subTitle = "Más de 50,000 asistentes satisfechos";
+const title = "Lo Que Dicen Nuestros Asistentes";
 
 
 const studentList = [
     {
         imgUrl: 'assets/images/feedback/student/01.jpg',
-        imgAlt: 'student rajibraj91 rajibraj',
-        name: 'Oliver Beddows',
-        degi: 'UX designer',
-        desc: 'Rapidiously buildcollaboration anden deas sharing viaing and bleedng edgeing nterfaces fnergstcally plagiarize teams anbuilding paradgms whereas goingi forward process and monetze',
+        imgAlt: 'asistente a evento',
+        name: 'Andrea Morales',
+        degi: 'Asistió a 15 eventos',
+        desc: 'Increíble plataforma para descubrir eventos. He asistido a conciertos, conferencias y festivales increíbles. La experiencia siempre es excelente y la organización impecable. ¡Totalmente recomendado!',
     },
     {
         imgUrl: 'assets/images/feedback/student/02.jpg',
-        imgAlt: 'student rajibraj91 rajibraj',
-        name: 'Madley Pondor',
-        degi: 'UX designer',
-        desc: 'Rapidiously buildcollaboration anden deas sharing viaing and bleedng edgeing nterfaces fnergstcally plagiarize teams anbuilding paradgms whereas goingi forward process and monetze',
+        imgAlt: 'asistente a evento',
+        name: 'Roberto Sánchez',
+        degi: 'Asistió a 23 eventos',
+        desc: 'La mejor manera de estar al tanto de los eventos en la ciudad. El proceso de registro es súper fácil y siempre encuentro eventos que me interesan. La calidad de los organizadores es excepcional.',
     },
 ]
 
@@ -38,7 +37,7 @@ const Student = () => {
                         <div className="col">
                             <div className="sf-left">
                                 <div className="sfl-thumb">
-                                    <img src="assets/images/feedback/01.jpg" alt="student feedback" />
+                                    <img src="assets/images/feedback/01.jpg" alt="testimonios asistentes" />
                                     <a href="https://www.youtube.com/embed/MU3qrgR2Kkc" className="video-button popup" target="_blank"><i className="icofont-ui-play"></i></a>
                                 </div>
                             </div>

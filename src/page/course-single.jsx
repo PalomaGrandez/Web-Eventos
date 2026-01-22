@@ -1,19 +1,18 @@
-import { Component, Fragment } from "react";
+import { Fragment } from "react";
+import { useParams } from "react-router-dom";
+import { eventsData } from "../data/events";
 import Footer from "../component/layout/footer";
 import Header from "../component/layout/header";
-import PageHeaderTwo from "../component/layout/pageheader-2";
-import Author from "../component/sidebar/author";
-import Comment from "../component/sidebar/comment";
-import CourseSideCetagory from "../component/sidebar/course-cetagory";
-import CourseSideDetail from "../component/sidebar/course-detail";
-import Respond from "../component/sidebar/respond";
-
+import PageHeader from "../component/layout/pageheader";
 
 const CourseSingle = () => {
+    const { id } = useParams();
+    const event = eventsData[id] || eventsData[1];
+
     return (
         <Fragment>
             <Header />
-            <PageHeaderTwo />
+            <PageHeader title={event.title} curPage={'Detalle del Evento'} />
             <div className="course-single-section padding-tb section-bg">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -21,99 +20,118 @@ const CourseSingle = () => {
                             <div className="main-part">
                                 <div className="course-item">
                                     <div className="course-inner">
+                                        <div className="course-thumb mb-4">
+                                            <img src={event.image} alt={event.title} />
+                                        </div>
                                         <div className="course-content">
-                                            <h3>Course Overview</h3>
-                                            <p>In this course take you from the fundamentals and concepts of data modeling all the way through anumber of best practices and techniques that you’ll need to build data models in your organization. You’ll find many By the end of the course, you’ll be all set to not only put these principles to works but also to maike the key data modeling and design decisions required by the info data modeling that transcend the nuts-and-bolts that clearly the key covered the course and design patterns.</p>
-                                            <h4>What You'll Learn in This Course:</h4>
+                                            <h3>Descripción del Evento</h3>
+                                            <p>{event.overview}</p>
+                                            <p>{event.description}</p>
+                                            
+                                            <h4>Qué Incluye Este Evento:</h4>
                                             <ul className="lab-ul">
-                                                <li><i className="icofont-tick-mark"></i>Ready to begin working on real-world data modeling projects</li>
-                                                <li><i className="icofont-tick-mark"></i>Expanded responsibilities as part of an existing role</li>
-                                                <li><i className="icofont-tick-mark"></i>Be able to create Flyers, Brochures, Advertisements</li>
-                                                <li><i className="icofont-tick-mark"></i>Find a new position involving data modeling.</li>
-                                                <li><i className="icofont-tick-mark"></i>Work with color and Gradients and Grids</li>
+                                                {event.learn.map((item, i) => (
+                                                    <li key={i}><i className="icofont-tick-mark"></i>{item}</li>
+                                                ))}
                                             </ul>
-                                            <p>In this course take you from the fundamentals and concepts of data modeling all the way through anumber  of best practices and techniques that you’ll need to build data models in your organization. You’ll find many examples that clearly the key covered the course</p>
-                                            <p>By the end of the course, you’ll be all set to not only put these principles to works but also to maike the key data modeling and design decisions required by the info data modeling that transcend the nuts-and-bolts that clearly the key covered the course and design patterns.</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="course-video">
                                     <div className="course-video-title">
-                                        <h4>Course Content</h4>
+                                        <h4>Programa del Evento</h4>
                                     </div>
                                     <div className="course-video-content">
                                         <div className="accordion" id="accordionExample">
-                                            <div className="accordion-item">
-                                                <div className="accordion-header" id="accordion01">
-                                                    <button className="d-flex flex-wrap justify-content-between" data-bs-toggle="collapse" data-bs-target="#videolist1" aria-expanded="true" aria-controls="videolist1"><span>1.Introduction</span> <span>5lessons, 17:37</span> </button>
+                                            {event.schedule.map((section, idx) => (
+                                                <div className="accordion-item" key={idx}>
+                                                    <div className="accordion-header" id={`accordion${idx}`}>
+                                                        <button 
+                                                            className="d-flex flex-wrap justify-content-between" 
+                                                            data-bs-toggle="collapse" 
+                                                            data-bs-target={`#schedule${idx}`}
+                                                            aria-expanded={idx === 0 ? "true" : "false"}
+                                                            aria-controls={`schedule${idx}`}
+                                                        >
+                                                            <span>{section.title}</span>
+                                                            <span>{section.duration}</span>
+                                                        </button>
+                                                    </div>
+                                                    <div 
+                                                        id={`schedule${idx}`} 
+                                                        className={`accordion-collapse collapse ${idx === 0 ? 'show' : ''}`}
+                                                        aria-labelledby={`accordion${idx}`}
+                                                        data-bs-parent="#accordionExample"
+                                                    >
+                                                        <ul className="lab-ul video-item-list">
+                                                            {section.items.map((item, i) => (
+                                                                <li key={i} className="d-flex flex-wrap justify-content-between">
+                                                                    <div className="video-item-title">{item}</div>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                                <div id="videolist1" className="accordion-collapse collapse show" aria-labelledby="accordion01" data-bs-parent="#accordionExample">
-                                                    <ul className="lab-ul video-item-list">
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">1.1 Welcome to the course 02:30 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">1.2 How to set up your photoshop workspace  08:33 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">1.3 Essential Photoshop Tools 03:38 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">1.4 Finding inspiration 02:30 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">1.5 Choosing Your Format 03:48 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item">
-                                                <div className="accordion-header" id="accordion02">
-                                                    <button className="d-flex flex-wrap justify-content-between" data-bs-toggle="collapse" data-bs-target="#videolist2" aria-expanded="true" aria-controls="videolist2"> <span>2.How to Create Mixed Media Art in Adobe Photoshop</span> <span>5 lessons, 52:15</span> </button>
-                                                </div>
-                                                <div id="videolist2" className="accordion-collapse collapse" aria-labelledby="accordion02" data-bs-parent="#accordionExample">
-                                                    <ul className="lab-ul video-item-list">
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">2.1 Using Adjustment Layers 06:20 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">2.2 Building the composition 07:33 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">2.3 Photoshop Lighting effects 06:30 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">2.4 Digital Painting using photoshop brushes 08:34 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                        <li className=" d-flex flex-wrap justify-content-between">
-                                                            <div className="video-item-title">2.5 Finalizing the details 10:30 minutes</div>
-                                                            <div className="video-item-icon"><a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" className="popup" target="_blank"><i className="icofont-play-alt-2"></i></a></div>
-                                                        </li>
-                                                    </ul>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="course-item mt-4">
+                                    <div className="course-inner">
+                                        <div className="course-content">
+                                            <h4>Sobre el Organizador</h4>
+                                            <div className="d-flex align-items-center mb-3">
+                                                <img 
+                                                    src={event.organizer.image} 
+                                                    alt={event.organizer.name}
+                                                    style={{width: '80px', height: '80px', borderRadius: '50%', marginRight: '20px'}}
+                                                />
+                                                <div>
+                                                    <h5 className="mb-1">{event.organizer.name}</h5>
+                                                    <p className="mb-0">{event.organizer.bio}</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <Author />
-                                <Comment />
-                                <Respond />
                             </div>
                         </div>
+                        
                         <div className="col-lg-4">
                             <div className="sidebar-part">
-                                <CourseSideDetail />
-                                <CourseSideCetagory />
+                                <div className="course-side-detail">
+                                    <div className="csd-title">
+                                        <h4>Información del Evento</h4>
+                                    </div>
+                                    <ul className="lab-ul csd-list">
+                                        <li>
+                                            <div className="csdi-left"><i className="icofont-ticket"></i> Precio:</div>
+                                            <div className="csdi-right">{event.price}</div>
+                                        </li>
+                                        <li>
+                                            <div className="csdi-left"><i className="icofont-calendar"></i> Fecha:</div>
+                                            <div className="csdi-right">{event.date}</div>
+                                        </li>
+                                        <li>
+                                            <div className="csdi-left"><i className="icofont-clock-time"></i> Duración:</div>
+                                            <div className="csdi-right">{event.duration}</div>
+                                        </li>
+                                        <li>
+                                            <div className="csdi-left"><i className="icofont-location-pin"></i> Modalidad:</div>
+                                            <div className="csdi-right">{event.location}</div>
+                                        </li>
+                                        <li>
+                                            <div className="csdi-left"><i className="icofont-home"></i> Lugar:</div>
+                                            <div className="csdi-right">{event.venue}</div>
+                                        </li>
+                                        <li>
+                                            <div className="csdi-left"><i className="icofont-tag"></i> Categoría:</div>
+                                            <div className="csdi-right">{event.category}</div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

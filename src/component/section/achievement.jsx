@@ -1,45 +1,44 @@
-
 import CountUp from 'react-countup';
 
-const subTitle = "START TO SUCCESS";
-const title = "Achieve Your Goals With Edukon";
+const subTitle = "Nuestra Comunidad";
+const title = "Eventos en Números";
 
 
 const achievementList = [
     {
-        count: '30',
-        desc: 'Years of Language Education Experience',
+        count: '150',
+        desc: 'Eventos Realizados',
     },
     {
-        count: '3084',
-        desc: 'Learners Enrolled in Edukon Courses',
+        count: '8500',
+        desc: 'Personas Han Asistido',
     },
     {
-        count: '330',
-        desc: 'Qualified Teachers And Language Experts',
+        count: '45',
+        desc: 'Organizadores Activos',
     },
     {
-        count: '2300',
-        desc: 'Innovative Foreign Language Courses',
+        count: '12',
+        desc: 'Ciudades con Eventos',
     },
 ]
 
 const achieveList = [
     {
         imgUrl: 'assets/images/achive/01.png',
-        imgAlt: 'achive thumb rajibraj91 rajibraj',
-        title: 'Start Teaching Today',
-        desc: 'Seamlessly engage technically sound coaborative reintermed goal oriented content rather than ethica',
-        btnText: 'Become A Instructor',
+        imgAlt: 'organiza eventos',
+        title: '¿Quieres Organizar Eventos?',
+        desc: 'Si tienes experiencia organizando eventos y quieres llegar a más personas, únete a nuestra plataforma',
+        btnText: 'Información para Organizadores',
         siteLink: '#',
     },
     {
         imgUrl: 'assets/images/achive/02.png',
-        imgAlt: 'achive thumb rajibraj91 rajibraj',
-        title: 'If You Join Our Course',
-        desc: 'Seamlessly engage technically sound coaborative reintermed goal oriented content rather than ethica',
-        btnText: 'Register For Free',
-        siteLink: '#',
+        imgAlt: 'registrate',
+        title: 'Únete a la Comunidad',
+        desc: 'Regístrate para recibir notificaciones sobre nuevos eventos y tener acceso a toda la información',
+        btnText: 'Crear Cuenta Gratis',
+        siteLink: '/signup',
     },
 ]
 

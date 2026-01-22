@@ -1,47 +1,46 @@
-
 import { Link } from "react-router-dom";
 
-const subTitle = "Popular Category";
-const title = "Popular Category For Learn";
-const btnText = "Browse All Categories";
+const subTitle = "Categorías Populares";
+const title = "Explora Eventos Por Categoría";
+const btnText = "Ver Todas las Categorías";
 
 
 const categoryList = [
     {
         imgUrl: 'assets/images/category/icon/01.jpg',
-        imgAlt: 'category rajibraj91 rajibraj',
-        title: 'Computer Science',
-        count: '24 Course',
+        imgAlt: 'Conciertos y Música',
+        title: 'Conciertos',
+        count: '45 Eventos',
     },
     {
         imgUrl: 'assets/images/category/icon/02.jpg',
-        imgAlt: 'category rajibraj91 rajibraj',
-        title: 'Civil Engineering',
-        count: '04 Course',
+        imgAlt: 'Conferencias',
+        title: 'Conferencias',
+        count: '28 Eventos',
     },
     {
         imgUrl: 'assets/images/category/icon/03.jpg',
-        imgAlt: 'category rajibraj91 rajibraj',
-        title: 'Business Analysis',
-        count: '27 Course',
+        imgAlt: 'Deportes',
+        title: 'Deportes',
+        count: '32 Eventos',
     },
     {
         imgUrl: 'assets/images/category/icon/04.jpg',
-        imgAlt: 'category rajibraj91 rajibraj',
-        title: 'Data Science Analytics',
-        count: '28 Course',
+        imgAlt: 'Festivales',
+        title: 'Festivales',
+        count: '18 Eventos',
     },
     {
         imgUrl: 'assets/images/category/icon/05.jpg',
-        imgAlt: 'category rajibraj91 rajibraj',
-        title: 'Learning Management',
-        count: '78 Course',
+        imgAlt: 'Teatro y Arte',
+        title: 'Teatro y Arte',
+        count: '22 Eventos',
     },
     {
         imgUrl: 'assets/images/category/icon/06.jpg',
-        imgAlt: 'category rajibraj91 rajibraj',
-        title: 'Computer Engineering',
-        count: '38 Course',
+        imgAlt: 'Talleres',
+        title: 'Talleres',
+        count: '15 Eventos',
     },
 ]
 

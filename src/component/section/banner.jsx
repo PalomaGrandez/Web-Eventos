@@ -1,26 +1,23 @@
-
-
-
-const subTitle = "Online education";
-const title = <h2 className="title"><span className="d-lg-block">Learn The</span> Skills You Need <span className="d-lg-block">To Succeed</span></h2>;
-const desc = "Free online courses from the world’s Leading experts. join 18+ million Learners today.";
+const subTitle = "Descubre Experiencias Únicas";
+const title = <h2 className="title"><span className="d-lg-block">Los Mejores</span> Eventos <span className="d-lg-block">Te Esperan</span></h2>;
+const desc = "Encuentra conciertos, conferencias, festivales y más. Únete a miles de personas que ya viven experiencias inolvidables.";
 
 
 const catagoryList = [
     {
-        name: 'Figma',
+        name: 'Conciertos',
         link: '#',
     },
     {
-        name: 'Adobe XD',
+        name: 'Conferencias',
         link: '#',
     },
     {
-        name: 'illustration',
+        name: 'Festivales',
         link: '#',
     },
     {
-        name: 'Photoshop',
+        name: 'Deportes',
         link: '#',
     },
 ]
@@ -28,27 +25,27 @@ const catagoryList = [
 
 const shapeList = [
     {
-        name: '16M Students Happy',
+        name: '50K+ Asistentes Felices',
         link: '#',
         className: 'ccl-shape shape-1',
     },
     {
-        name: '130K+ Total Courses',
+        name: '500+ Eventos Realizados',
         link: '#',
         className: 'ccl-shape shape-2',
     },
     {
-        name: '89% Successful Students',
+        name: '95% Satisfacción',
         link: '#',
         className: 'ccl-shape shape-3',
     },
     {
-        name: '23M+ Learners',
+        name: '15+ Ciudades',
         link: '#',
         className: 'ccl-shape shape-4',
     },
     {
-        name: '36+ Languages',
+        name: 'Eventos Todo el Año',
         link: '#',
         className: 'ccl-shape shape-5',
     },
@@ -65,15 +62,9 @@ const Banner = () => {
                                 <h6 className="subtitle text-uppercase fw-medium">{subTitle}</h6>
                                 {title}
                                 <p className="desc">{desc}</p>
-                                <form action="/">
-                                    <div className="banner-icon">
-                                        <i className="icofont-search"></i>
-                                    </div>
-                                    <input type="text" placeholder="Keywords of your course" />
-                                    <button type="submit">Search Course</button>
-                                </form>
+
                                 <div className="banner-catagory d-flex flex-wrap">
-                                    <p>Most Popular : </p>
+                                    <p>Más Populares: </p>
                                     <ul className="lab-ul d-flex flex-wrap">
                                         {catagoryList.map((val, i) => (
                                             <li key={i}><a href={val.link}>{val.name}</a></li>
